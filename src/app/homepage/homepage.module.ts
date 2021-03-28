@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from '../app-routing.module';
 import { HomepageComponent } from './homepage.component';
+import {HomepageRoutingModule} from './homepage-routing.module';
 
 @NgModule({
   declarations: [
@@ -10,9 +9,12 @@ import { HomepageComponent } from './homepage.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    HomepageRoutingModule
   ],
   providers: [],
-  bootstrap: [HomepageComponent]
+  bootstrap: [HomepageComponent],
+  exports: [
+    HomepageComponent
+  ]
 })
 export class HomepageModule { }
