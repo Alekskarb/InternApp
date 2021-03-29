@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import {HomepageModule} from './homepage/homepage.module';
 import {RegformModule} from './regform/regform.module';
 import {TraindescrModule} from './traindescr/traindescr.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {TraindescrModule} from './traindescr/traindescr.module';
     AppRoutingModule,
     HomepageModule,
     RegformModule,
-    TraindescrModule
+    TraindescrModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
